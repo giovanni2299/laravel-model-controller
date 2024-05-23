@@ -1,0 +1,17 @@
+body{
+    padding: 20px;
+}
+
+._row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+._col-4{
+    width: calc(3 * 100% / 12 - 12px);
+}
+._card{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

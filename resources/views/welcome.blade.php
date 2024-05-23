@@ -8,8 +8,38 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <body>
-        @yield('content')
-    </body>
+   
+        <ul class="_row">
+            @foreach ($movies as $movie)
+                    <li class="_col-4">
+                        <div class="_card text-center">
+                            <p>
+                                {{$movie->title}}
+    
+                            </p>
+                            <p>
+                                {{$movie->original_title}}
+    
+                            </p>
+                            <p>
+                                {{$movie->nationality}}
+    
+                            </p>
+                            <p>
+                                {{$movie->date}}
+    
+                            </p>
+                            <p>
+                                {{$movie->vote}}
+    
+                            </p>
+
+                        </div>
+
+                    </li>
+            @endforeach
+
+        </ul>
+    
 </body>
 </html>
